@@ -3,26 +3,26 @@ import { RFValue } from 'react-native-responsive-fontsize';
 
 export default {
   colors: {
-    WHITE: '#FFFFFF',
+    white: '#ffffff',
 
-    GREEN_700: '#00875F',
-    GREEN_500: '#00B37E',
+    green_700: '#00875f',
+    green_500: '#00b37e',
 
-    RED: '#F75A68',
-    RED_DARK: '#AA2834',
+    red: '#f75a68',
+    red_dark: '#aa2834',
 
-    GRAY_700: '#121214',
-    GRAY_600: '#202024',
-    GRAY_500: '#29292E',
-    GRAY_400: '#323238',
-    GRAY_300: '#7C7C8A',
-    GRAY_200: '#C4C4CC',
-    GRAY_100: '#E1E1E6',
+    gray_700: '#121214',
+    gray_600: '#202024',
+    gray_500: '#29292e',
+    gray_400: '#323238',
+    gray_300: '#7c7c8a',
+    gray_200: '#c4c4cc',
+    gray_100: '#e1e1e6',
   },
 
   fonts: {
-    REGULAR: 'Roboto_400Regular',
-    BOLD: 'Roboto_700Bold',
+    regular: 'Roboto_400Regular',
+    bold: 'Roboto_700Bold',
   },
 
   typography: {
