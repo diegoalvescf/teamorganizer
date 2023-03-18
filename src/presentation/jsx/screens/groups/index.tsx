@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+
+import { Container, Label } from './styles';
 
 export const GroupsScreen: React.FC = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Teste</Text>
-    </View>
+    <Container>
+      <Label>Groups</Label>
+    </Container>
   );
 };
