@@ -103,6 +103,44 @@ export default {
       },
     },
   },
+  sizeIcon: {
+    xxl: {
+      absolute: PixelRatio.getFontScale() * 36,
+      responsive: RFValue(PixelRatio.getFontScale() * 36),
+    },
+    xl: {
+      absolute: PixelRatio.getFontScale() * 32,
+      responsive: RFValue(PixelRatio.getFontScale() * 28),
+    },
+    lg: {
+      absolute: PixelRatio.getFontScale() * 24,
+      responsive: RFValue(PixelRatio.getFontScale() * 24),
+    },
+    xxm: {
+      absolute: PixelRatio.getFontScale() * 18,
+      responsive: RFValue(PixelRatio.getFontScale() * 18),
+    },
+    xm: {
+      absolute: PixelRatio.getFontScale() * 16,
+      responsive: RFValue(PixelRatio.getFontScale() * 16),
+    },
+    md: {
+      absolute: PixelRatio.getFontScale() * 14,
+      responsive: RFValue(PixelRatio.getFontScale() * 14),
+    },
+    sm: {
+      absolute: PixelRatio.getFontScale() * 12,
+      responsive: RFValue(PixelRatio.getFontScale() * 12),
+    },
+    xs: {
+      absolute: PixelRatio.getFontScale() * 10,
+      responsive: RFValue(PixelRatio.getFontScale() * 10),
+    },
+    xxs: {
+      absolute: PixelRatio.getFontScale() * 8,
+      responsive: RFValue(PixelRatio.getFontScale() * 8),
+    },
+  },
   spacing: {
     xxl: {
       absolute: 36,
