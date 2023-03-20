@@ -1,9 +1,11 @@
-import React from 'react';
-import { Container, BackIcon, Logo, BackButton } from './styles';
-import { HeaderProps } from './props';
 import logoImg from '@assets/logo.png';
+import React from 'react';
+import { HeaderProps } from './props';
+import { BackButton, BackIcon, Container, Logo } from './styles';
 
-export const Header: React.FC<HeaderProps> = ({ showBackButton = false }) => {
+export const HeaderComponent: React.FC<HeaderProps> = ({
+  showBackButton = false,
+}) => {
   return (
     <Container>
       {showBackButton && (
