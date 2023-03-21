@@ -2,7 +2,7 @@ import { HeaderComponent } from '@components/header';
 import { HighlightComponent } from '@components/highlight';
 import React from 'react';
 
-import { Container, Header, Highlight } from './styles';
+import { Container, GroupCard, Header, Highlight } from './styles';
 
 export const GroupsScreen: React.FC = () => {
   return (
@@ -11,6 +11,11 @@ export const GroupsScreen: React.FC = () => {
       <Highlight
         title='Turmas'
         subtitle='jogue com a sua turma'
+      />
+
+      <GroupCard
+        title='Time do Tonhão'
+        onPress={() => console.log('💩 -> Xaaama o tonhão')}
       />
     </Container>
   );

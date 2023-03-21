@@ -1,3 +1,4 @@
+import { GroupCardComponent } from '@components/group-card';
 import { HeaderComponent } from '@components/header';
 import { HighlightComponent } from '@components/highlight';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -12,3 +13,5 @@ export const Container = styled(SafeAreaView)`
 export const Header = styled(HeaderComponent)``;
 
 export const Highlight = styled(HighlightComponent)``;
+
+export const GroupCard = styled(GroupCardComponent)``;
