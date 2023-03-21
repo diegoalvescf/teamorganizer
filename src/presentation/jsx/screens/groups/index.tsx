@@ -1,21 +1,43 @@
 import { HeaderComponent } from '@components/header';
 import { HighlightComponent } from '@components/highlight';
-import React from 'react';
+import React, { useState } from 'react';
+import { _groupsData } from './data';
+import { IGroup } from './props';
 
-import { Container, GroupCard, Header, Highlight } from './styles';
+import {
+  Container,
+  GroupCard,
+  GroupsList,
+  Header,
+  HighlightFeedback,
+  HighlightGroups,
+} from './styles';
 
 export const GroupsScreen: React.FC = () => {
+  const [groups, setGroups] = useState<IGroup[]>(_groupsData);
+
   return (
     <Container>
       <Header />
-      <Highlight
+      <HighlightGroups
         title='Turmas'
         subtitle='jogue com a sua turma'
       />
 
-      <GroupCard
-        title='Time do Tonhão'
-        onPress={() => console.log('💩 -> Xaaama o tonhão')}
+      <GroupsList
+        data={groups}
+        keyExtractor={(item) => String(item.id)}
+        renderItem={({ item }) => (
+          <GroupCard
+            key={item.id}
+            title={item.title}
+            onPress={() => console.log('💩 -> Xaaama o ', item.title)}
+          />
+        )}
+        contentContainerStyle={groups.length === 0 && { flex: 1 }}
+        ListEmptyComponent={() => (
+          <HighlightFeedback title='Que tal cadastrar a primeira turma ? 🤩' />
+        )}
       />
     </Container>
   );
