@@ -113,7 +113,7 @@ export default {
       responsive: RFValue(PixelRatio.getFontScale() * 28),
     },
     lg: {
-      absolute: PixelRatio.getFontScale() * 24,
+      absolute: PixelRatio.getFontScale() * 28,
       responsive: RFValue(PixelRatio.getFontScale() * 24),
     },
     xxm: {

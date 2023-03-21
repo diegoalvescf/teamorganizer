@@ -1,3 +1,5 @@
+import { ButtonComponent } from '@components/button';
+import { ModeButton } from '@components/button/props';
 import { GroupCardComponent } from '@components/group-card';
 import { HeaderComponent } from '@components/header';
 import { HighlightComponent } from '@components/highlight';
@@ -42,3 +44,7 @@ export const HighlightFeedback = styled(HighlightComponent).attrs(
     },
   })
 )``;
+
+export const CreateButton = styled(ButtonComponent).attrs({
+  type: ModeButton.create,
+})``;

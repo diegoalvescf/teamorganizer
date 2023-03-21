@@ -6,6 +6,7 @@ import { IGroup } from './props';
 
 import {
   Container,
+  CreateButton,
   GroupCard,
   GroupsList,
   Header,
@@ -14,7 +15,7 @@ import {
 } from './styles';
 
 export const GroupsScreen: React.FC = () => {
-  const [groups, setGroups] = useState<IGroup[]>(_groupsData);
+  const [groups, setGroups] = useState<IGroup[]>([]);
 
   return (
     <Container>
@@ -38,6 +39,11 @@ export const GroupsScreen: React.FC = () => {
         ListEmptyComponent={() => (
           <HighlightFeedback title='Que tal cadastrar a primeira turma ? 🤩' />
         )}
+      />
+
+      <CreateButton
+        title='Criar turma'
+        onPress={() => console.log('🚀 => Criar turma')}
       />
     </Container>
   );
