@@ -4,12 +4,13 @@ import { HeaderProps } from './props';
 import { BackButton, BackIcon, Container, Logo } from './styles';
 
 export const HeaderComponent: React.FC<HeaderProps> = ({
+  onPress,
   showBackButton = false,
 }) => {
   return (
     <Container>
       {showBackButton && (
-        <BackButton>
+        <BackButton onPress={onPress}>
           <BackIcon />
         </BackButton>
       )}

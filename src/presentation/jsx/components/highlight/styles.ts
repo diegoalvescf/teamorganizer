@@ -7,16 +7,16 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   text-align: center;
-
-  font-size: ${({ theme }) => theme.typography.fontSize.xl.responsive}px;
+  line-height: ${({ theme }) => theme.typography.lineHeight.xxm.responsive}px;
+  font-size: ${({ theme }) => theme.typography.fontSize.lg.responsive}px;
   font-family: ${({ theme }) => theme.fonts.bold};
   color: ${({ theme }) => theme.colors.white};
 `;
 
 export const Subtitle = styled.Text`
   text-align: center;
-
-  font-size: ${({ theme }) => theme.typography.fontSize.md.responsive}px;
+  font-size: ${({ theme }) => theme.typography.fontSize.xm.responsive}px;
+  line-height: ${({ theme }) => theme.typography.lineHeight.md.responsive}px;
   font-family: ${({ theme }) => theme.fonts.regular};
   color: ${({ theme }) => theme.colors.gray_300};
 `;

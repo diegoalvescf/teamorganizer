@@ -105,7 +105,7 @@ export default {
   },
   sizeIcon: {
     xxl: {
-      absolute: PixelRatio.getFontScale() * 36,
+      absolute: PixelRatio.getFontScale() * 56,
       responsive: RFValue(PixelRatio.getFontScale() * 36),
     },
     xl: {

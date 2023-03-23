@@ -5,7 +5,7 @@ export enum ModeButton {
   delete = 'delete',
 }
 export interface ButtonProps extends TouchableOpacityProps {
-  type: ModeButton;
+  type?: ModeButton;
   title: string;
 }
 

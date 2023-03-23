@@ -5,9 +5,9 @@ import { ButtonStyleProps, ModeButton } from './props';
 
 export const Container = styled(TouchableOpacity)<ButtonStyleProps>`
   flex: 1;
-
-  min-height: ${({ theme }) => theme.sizeIcon.lg.responsive * 2};
-  max-height: ${({ theme }) => theme.sizeIcon.lg.responsive * 2};
+  width: 100%;
+  min-height: ${({ theme }) => theme.sizeIcon.xxl.responsive}px;
+  max-height: ${({ theme }) => theme.sizeIcon.xxl.responsive}px;
 
   background-color: ${({ theme, type }) =>
     type === ModeButton.create

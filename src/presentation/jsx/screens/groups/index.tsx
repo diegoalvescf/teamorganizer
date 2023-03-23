@@ -1,8 +1,7 @@
-import { HeaderComponent } from '@components/header';
-import { HighlightComponent } from '@components/highlight';
 import React, { useState } from 'react';
-import { _groupsData } from './data';
+import { ERouteName } from '@infra/config/routes';
 import { IGroup } from './props';
+import { useNavigation } from '@react-navigation/native';
 
 import {
   Container,
@@ -16,6 +15,11 @@ import {
 
 export const GroupsScreen: React.FC = () => {
   const [groups, setGroups] = useState<IGroup[]>([]);
+  const { navigate } = useNavigation();
+
+  const handleCreateNewGroup = () => {
+    navigate(ERouteName.NewGroupScreen);
+  };
 
   return (
     <Container>
@@ -43,7 +47,7 @@ export const GroupsScreen: React.FC = () => {
 
       <CreateButton
         title='Criar turma'
-        onPress={() => console.log('🚀 => Criar turma')}
+        onPress={handleCreateNewGroup}
       />
     </Container>
   );
