@@ -1,18 +1,18 @@
 import { TouchableOpacity } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 import { ButtonStyleProps, ModeButton } from './props';
 
 export const Container = styled(TouchableOpacity)<ButtonStyleProps>`
-  flex: 1;
-  width: 100%;
-  min-height: ${({ theme }) => theme.sizeIcon.xxl.responsive}px;
-  max-height: ${({ theme }) => theme.sizeIcon.xxl.responsive}px;
-
-  background-color: ${({ theme, type }) =>
-    type === ModeButton.create
+  ${({ theme, type }) => css`
+    min-height: ${theme.sizeIcon.xxl.absolute}px;
+    max-height: ${theme.sizeIcon.xxl.absolute}px;
+    background-color: ${type === ModeButton.create
       ? theme.colors.green_700
       : theme.colors.red_dark};
+  `}
+  flex: 1;
+  width: 100%;
 
   border-radius: ${RFValue(6)}px;
 
@@ -21,7 +21,9 @@ export const Container = styled(TouchableOpacity)<ButtonStyleProps>`
 `;
 
 export const Title = styled.Text`
-  font-size: ${({ theme }) => theme.typography.fontSize.md.responsive}px;
-  color: ${({ theme }) => theme.colors.white};
-  font-family: ${({ theme }) => theme.fonts.bold};
+  ${({ theme }) => css`
+    font-size: ${theme.typography.fontSize.md.responsive}px;
+    color: ${theme.colors.white};
+    font-family: ${theme.fonts.bold};
+  `}
 `;

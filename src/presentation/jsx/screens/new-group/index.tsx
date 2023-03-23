@@ -6,6 +6,7 @@ import {
   Content,
   CreateButton,
   Header,
+  Input,
   NewGroupCard,
   UserIcon,
 } from './styles';
@@ -26,6 +27,8 @@ export const NewGroupScreen: React.FC<NewGroupScreenProps> = ({}) => {
           title='Nova turma'
           subtitle='crie a turma para adicionar as pessoas'
         />
+
+        <Input placeholder='Nome da turma' />
 
         <CreateButton title='Criar' />
       </Content>

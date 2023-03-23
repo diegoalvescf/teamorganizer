@@ -27,79 +27,39 @@ export default {
 
   typography: {
     fontSize: {
-      xxl: {
-        absolute: PixelRatio.getFontScale() * 36,
-        responsive: RFValue(PixelRatio.getFontScale() * 36),
-      },
       xl: {
-        absolute: PixelRatio.getFontScale() * 28,
-        responsive: RFValue(PixelRatio.getFontScale() * 28),
-      },
-      lg: {
         absolute: PixelRatio.getFontScale() * 24,
         responsive: RFValue(PixelRatio.getFontScale() * 24),
       },
-      xxm: {
+      lg: {
         absolute: PixelRatio.getFontScale() * 18,
         responsive: RFValue(PixelRatio.getFontScale() * 18),
       },
-      xm: {
+      md: {
         absolute: PixelRatio.getFontScale() * 16,
         responsive: RFValue(PixelRatio.getFontScale() * 16),
       },
-      md: {
+      sm: {
         absolute: PixelRatio.getFontScale() * 14,
         responsive: RFValue(PixelRatio.getFontScale() * 14),
       },
-      sm: {
-        absolute: PixelRatio.getFontScale() * 12,
-        responsive: RFValue(PixelRatio.getFontScale() * 12),
-      },
-      xs: {
-        absolute: PixelRatio.getFontScale() * 10,
-        responsive: RFValue(PixelRatio.getFontScale() * 10),
-      },
-      xxs: {
-        absolute: PixelRatio.getFontScale() * 8,
-        responsive: RFValue(PixelRatio.getFontScale() * 8),
-      },
     },
     lineHeight: {
-      xxl: {
-        absolute: PixelRatio.getFontScale() * 46,
-        responsive: RFValue(PixelRatio.getFontScale() * 46),
-      },
       xl: {
-        absolute: PixelRatio.getFontScale() * 38,
-        responsive: RFValue(PixelRatio.getFontScale() * 38),
-      },
-      lg: {
-        absolute: PixelRatio.getFontScale() * 34,
-        responsive: RFValue(PixelRatio.getFontScale() * 34),
-      },
-      xxm: {
         absolute: PixelRatio.getFontScale() * 28,
         responsive: RFValue(PixelRatio.getFontScale() * 28),
       },
-      xm: {
-        absolute: PixelRatio.getFontScale() * 26,
-        responsive: RFValue(PixelRatio.getFontScale() * 26),
-      },
-      md: {
-        absolute: PixelRatio.getFontScale() * 24,
-        responsive: RFValue(PixelRatio.getFontScale() * 24),
-      },
-      sm: {
+      lg: {
         absolute: PixelRatio.getFontScale() * 22,
         responsive: RFValue(PixelRatio.getFontScale() * 22),
       },
-      xs: {
+      md: {
         absolute: PixelRatio.getFontScale() * 20,
         responsive: RFValue(PixelRatio.getFontScale() * 20),
       },
-      xxs: {
-        absolute: PixelRatio.getFontScale() * 16,
-        responsive: RFValue(PixelRatio.getFontScale() * 16),
+      sm: {
+        absolute: PixelRatio.getFontScale() * 18,
+        responsive: RFValue(PixelRatio.getFontScale() * 18),
       },
     },
   },

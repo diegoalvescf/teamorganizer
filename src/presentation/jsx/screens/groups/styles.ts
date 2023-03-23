@@ -5,13 +5,15 @@ import { HeaderComponent } from '@components/header';
 import { HighlightComponent } from '@components/highlight';
 import { FlatList } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 import { IGroup } from './props';
 
 export const Container = styled(SafeAreaView)`
+  ${({ theme }) => css`
+    background-color: ${theme.colors.gray_600};
+    padding: ${theme.spacing.lg.responsive}px;
+  `}
   flex: 1;
-  background-color: ${({ theme }) => theme.colors.gray_600};
-  padding: ${({ theme }) => theme.spacing.lg.responsive}px;
 `;
 
 export const Header = styled(HeaderComponent)``;
