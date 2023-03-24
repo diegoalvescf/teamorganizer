@@ -1,3 +1,4 @@
+import { ERouteName } from '@infra/config/routes';
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { NewGroupScreenProps } from './props';
@@ -12,6 +13,7 @@ import {
 } from './styles';
 
 export const NewGroupScreen: React.FC<NewGroupScreenProps> = ({}) => {
+  const { navigate } = useNavigation();
   const { goBack } = useNavigation();
   return (
     <Container>
@@ -30,7 +32,10 @@ export const NewGroupScreen: React.FC<NewGroupScreenProps> = ({}) => {
 
         <Input placeholder='Nome da turma' />
 
-        <CreateButton title='Criar' />
+        <CreateButton
+          title='Criar'
+          onPress={() => navigate(ERouteName.PlayersScreen as never)}
+        />
       </Content>
     </Container>
   );

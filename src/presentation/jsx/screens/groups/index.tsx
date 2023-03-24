@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ERouteName } from '@infra/config/routes';
+
 import { IGroup } from './props';
 import { useNavigation } from '@react-navigation/native';
 
@@ -12,13 +12,14 @@ import {
   HighlightFeedback,
   HighlightGroups,
 } from './styles';
+import { ERouteName } from '@infra/config/routes';
 
 export const GroupsScreen: React.FC = () => {
   const [groups, setGroups] = useState<IGroup[]>([]);
   const { navigate } = useNavigation();
 
   const handleCreateNewGroup = () => {
-    navigate(ERouteName.NewGroupScreen);
+    navigate(ERouteName.NewGroupScreen as never);
   };
 
   return (
