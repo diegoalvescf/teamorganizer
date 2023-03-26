@@ -11,6 +11,7 @@ module.exports = function (api) {
             '@assets': './src/assets',
             '@components': './src/presentation/jsx/components',
             '@routes': './src/main/routes',
+            '@infra': './src/infra',
             '@screens': './src/presentation/jsx/screens',
             '@storage': './src/infra/database/storage',
             '@theme': './src/common/theme',
