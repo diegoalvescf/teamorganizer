@@ -1,7 +1,7 @@
 import { ButtonComponent } from '@components/button';
 import { HeaderComponent } from '@components/header';
 import { HighlightComponent } from '@components/highlight';
-import { InputComponent } from '@components/input-component';
+import { InputComponent } from '@components/input';
 import { UsersThree } from 'phosphor-react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styled, { css } from 'styled-components/native';

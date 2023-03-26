@@ -66,19 +66,19 @@ export default {
   sizeIcon: {
     xxl: {
       absolute: PixelRatio.getFontScale() * 56,
-      responsive: RFValue(PixelRatio.getFontScale() * 36),
+      responsive: RFValue(PixelRatio.getFontScale() * 56),
     },
     xl: {
       absolute: PixelRatio.getFontScale() * 32,
-      responsive: RFValue(PixelRatio.getFontScale() * 28),
+      responsive: RFValue(PixelRatio.getFontScale() * 32),
     },
     lg: {
       absolute: PixelRatio.getFontScale() * 28,
-      responsive: RFValue(PixelRatio.getFontScale() * 24),
+      responsive: RFValue(PixelRatio.getFontScale() * 28),
     },
     xxm: {
-      absolute: PixelRatio.getFontScale() * 18,
-      responsive: RFValue(PixelRatio.getFontScale() * 18),
+      absolute: PixelRatio.getFontScale() * 24,
+      responsive: RFValue(PixelRatio.getFontScale() * 24),
     },
     xm: {
       absolute: PixelRatio.getFontScale() * 16,
