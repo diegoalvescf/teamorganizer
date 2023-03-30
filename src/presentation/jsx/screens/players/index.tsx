@@ -1,8 +1,13 @@
-import React from 'react';
-import { PlayersScreenProps } from './props';
+import { useNavigation } from '@react-navigation/native';
+import React, { useState } from 'react';
+import { classData } from './classData';
+import { IClassName, PlayersScreenProps } from './props';
 import {
   ButtonAdd,
   ClassFilter,
+  ClassFilterContainer,
+  ClassFilterList,
+  AmountOfPlayersText,
   ClassNameCard,
   Container,
   Header,
@@ -11,9 +16,21 @@ import {
 } from './styles';
 
 export const PlayersScreen: React.FC<PlayersScreenProps> = ({}) => {
+  const { goBack } = useNavigation();
+  const [team, setTeam] = useState<IClassName>();
+  const [players, setPlayers] = useState([]);
+
+  const handleSelectTeam = (id: IClassName) => {
+    setTeam(id);
+  };
+
+  console.log('👽 👉', team);
   return (
     <Container>
-      <Header showBackButton />
+      <Header
+        showBackButton
+        onPress={goBack}
+      />
 
       <ClassNameCard
         title='Nome da turma'
@@ -28,10 +45,23 @@ export const PlayersScreen: React.FC<PlayersScreenProps> = ({}) => {
 
         <ButtonAdd />
       </Section>
-      <ClassFilter
-        title='Turma A'
-        isActive
-      />
+
+      <ClassFilterContainer>
+        <ClassFilterList
+          data={classData}
+          showsHorizontalScrollIndicator
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+            <ClassFilter
+              title={item.name}
+              isActive={item.id === team?.id}
+              onPress={() => handleSelectTeam(item)}
+            />
+          )}
+        />
+
+        <AmountOfPlayersText>{players.length}</AmountOfPlayersText>
+      </ClassFilterContainer>
     </Container>
   );
 };
