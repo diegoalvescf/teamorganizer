@@ -1,7 +1,7 @@
 import { ERouteName } from '@infra/config/routes';
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { NewGroupScreenProps } from './props';
+
 import {
   Container,
   Content,
@@ -12,7 +12,7 @@ import {
   UserIcon,
 } from './styles';
 
-export const NewGroupScreen: React.FC<NewGroupScreenProps> = ({}) => {
+export const NewGroupScreen: React.FC = () => {
   const { navigate } = useNavigation();
   const { goBack } = useNavigation();
   return (

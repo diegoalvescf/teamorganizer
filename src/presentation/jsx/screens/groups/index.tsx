@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-
-import { IGroup } from './props';
 import { useNavigation } from '@react-navigation/native';
 
 import {
@@ -13,6 +11,7 @@ import {
   HighlightGroups,
 } from './styles';
 import { ERouteName } from '@infra/config/routes';
+import { IGroup } from '@domain/models/IGroup';
 
 export const GroupsScreen: React.FC = () => {
   const [groups, setGroups] = useState<IGroup[]>([]);
