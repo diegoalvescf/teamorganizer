@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
-import { TReactNavigationStackParamList } from '@/infra/config/routes';
+import { TReactNavigationStackParamList } from '@infra/config/routes';
 
 declare global {
   namespace ReactNavigation {

@@ -3,10 +3,10 @@ import { ModeButton } from '@components/button/props';
 import { GroupCardComponent } from '@components/group-card';
 import { HeaderComponent } from '@components/header';
 import { HighlightComponent } from '@components/highlight';
+import { IGroup } from '@domain/models/IGroup';
 import { FlatList } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styled, { css } from 'styled-components/native';
-import { IGroup } from './props';
 
 export const Container = styled(SafeAreaView)`
   ${({ theme }) => css`
