@@ -18,7 +18,7 @@ export const GroupsScreen: React.FC = () => {
   const { navigate } = useNavigation();
 
   const handleCreateNewGroup = () => {
-    navigate(ERouteName.NewGroupScreen as never);
+    navigate(ERouteName.NewGroupScreen);
   };
 
   return (

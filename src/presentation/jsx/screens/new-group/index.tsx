@@ -34,7 +34,7 @@ export const NewGroupScreen: React.FC = () => {
 
         <CreateButton
           title='Criar'
-          onPress={() => navigate(ERouteName.PlayersScreen as never)}
+          onPress={() => navigate(ERouteName.PlayersScreen)}
         />
       </Content>
     </Container>
