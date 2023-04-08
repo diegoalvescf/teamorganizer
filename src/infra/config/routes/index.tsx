@@ -1,7 +1,7 @@
 export type TReactNavigationStackParamList = {
   GroupsScreen: undefined;
   NewGroupScreen: undefined;
-  PlayersScreen: undefined;
+  PlayersScreen: { group: string };
 };
 
 export enum ERouteName {
