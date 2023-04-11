@@ -1,6 +1,6 @@
 import { ERouteName } from '@infra/config/routes';
 import { useNavigation } from '@react-navigation/native';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 import {
   Container,
@@ -12,7 +12,7 @@ import {
   UserIcon,
 } from './styles';
 import { setGroupInternal } from '@infra/database/storage/group/set/set-group';
-import { Alert, KeyboardAvoidingView } from 'react-native';
+import { Alert, KeyboardAvoidingView, Platform, TextInput } from 'react-native';
 import { IGroup } from '@domain/models/IGroup';
 import { RandomIdGenerator } from '../../helpers/random-id-generator';
 import { AppError } from '@utils/app-error';
@@ -21,6 +21,8 @@ export const NewGroupScreen: React.FC = () => {
   const [group, setGroup] = useState<IGroup>({} as IGroup);
   const { navigate } = useNavigation();
   const { goBack } = useNavigation();
+
+  const inputGroupRef = useRef<TextInput>(null);
 
   const handleTextChange = (text: string) => {
     setGroup({ ...group, id: RandomIdGenerator(), title: text });
@@ -33,7 +35,10 @@ export const NewGroupScreen: React.FC = () => {
 
       await setGroupInternal(group);
       Alert.alert('Turma criada com sucesso');
-      // navigate(ERouteName.PlayersScreen, { group });
+
+      inputGroupRef.current?.clear();
+
+      navigate(ERouteName.PlayersScreen, { group });
     } catch (error) {
       if (error instanceof AppError) {
         Alert.alert('Novo grupo', error.message);
@@ -44,12 +49,10 @@ export const NewGroupScreen: React.FC = () => {
     }
   };
 
-  console.log('👽 👉', !!group.title);
-
   return (
     <KeyboardAvoidingView
       style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
-      behavior='padding'
+      behavior={Platform.OS == 'ios' ? 'padding' : 'height'}
       enabled
     >
       <Container>
@@ -66,6 +69,8 @@ export const NewGroupScreen: React.FC = () => {
           />
 
           <Input
+            inputRef={inputGroupRef}
+            autoCorrect={false}
             placeholder='Nome da turma'
             onChangeText={handleTextChange}
           />

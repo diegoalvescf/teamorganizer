@@ -53,7 +53,7 @@ export const GroupsScreen: React.FC = () => {
           <GroupCard
             key={item.id}
             title={item.title}
-            onPress={() => console.log('💩 -> Xaaama o ', item.id)}
+            onPress={() => navigate(ERouteName.PlayersScreen, { group: item })}
           />
         )}
         contentContainerStyle={groups.length === 0 && { flex: 1 }}
