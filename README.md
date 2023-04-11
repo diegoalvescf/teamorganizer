@@ -53,3 +53,13 @@ App consiste em ajudar na organização de pessoas que se encontram para jogar e
 ![Simulator Screen Recording - iPhone 14 Pro Max - 2023-04-11 at 03 09 18](https://user-images.githubusercontent.com/40840209/231071346-96483066-b40b-45bb-a086-6ba4d87d4f58.gif)
 
 
+### Rodando o projeto
+Para rodar o projeto, siga os seguintes passos:
+
+- Clone o repositório do projeto do GitHub.
+- No terminal, navegue até o diretório do projeto e execute o comando **_yarn_** para instalar todas as dependências do projeto.
+- Execute o comando **_npx expo start_** para iniciar o servidor de desenvolvimento.
+- Instale o aplicativo **_Expo Go_** em um dispositivo móvel Android ou iOS.
+- Abra o aplicativo **_Expo Go_** e escaneie o código QR exibido no terminal ou na página aberta pelo comando **_npx expo start_**.
+- O aplicativo deverá ser iniciado no dispositivo móvel.
+
