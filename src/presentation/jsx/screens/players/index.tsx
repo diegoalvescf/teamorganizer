@@ -117,12 +117,12 @@ export const PlayersScreen: React.FC = () => {
       navigate(ERouteName.GroupsScreen);
     } catch (error) {
       console.log('👽 👉', error);
-      Alert.alert('Remover grupo', 'Não foi possível remover esse grupo.');
+      Alert.alert('Remover turma', 'Não foi possível remover esse turma.');
     }
   };
 
   const handleRemoveGroup = () => {
-    Alert.alert('Remover', 'Deseja remover essa pessoa?', [
+    Alert.alert('Remover', 'Deseja remover essa turma?', [
       { text: 'Não', style: 'cancel' },
       { text: 'Sim', onPress: () => removeGroup() },
     ]);

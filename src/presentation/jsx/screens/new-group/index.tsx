@@ -41,9 +41,9 @@ export const NewGroupScreen: React.FC = () => {
       navigate(ERouteName.PlayersScreen, { group });
     } catch (error) {
       if (error instanceof AppError) {
-        Alert.alert('Novo grupo', error.message);
+        Alert.alert('nova turma', error.message);
       } else {
-        Alert.alert('Novo grupo', 'Erro ao cadastrar novo grupo 🚨');
+        Alert.alert('nova turma', 'Erro ao cadastrar nova turma 🚨');
         console.log('👽 👉', error);
       }
     }
