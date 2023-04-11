@@ -48,7 +48,7 @@ App consiste em ajudar na organização de pessoas que se encontram para jogar e
 ![Simulator Screen Recording - iPhone 14 Pro Max - 2023-04-11 at 03 05 10](https://user-images.githubusercontent.com/40840209/231070601-e60f755f-62af-42f3-a1b8-7b99a4382a35.gif)
 ![Simulator Screen Recording - iPhone 14 Pro Max - 2023-04-11 at 03 07 30](https://user-images.githubusercontent.com/40840209/231070961-447e0408-8b01-40ab-9cf9-adca4cfdf2e8.gif)
 
-- Validação e remoção de jogadores e grupo
+- Validação e remoção de jogadores e turmas
 
 ![Simulator Screen Recording - iPhone 14 Pro Max - 2023-04-11 at 03 09 18](https://user-images.githubusercontent.com/40840209/231071346-96483066-b40b-45bb-a086-6ba4d87d4f58.gif)
 
