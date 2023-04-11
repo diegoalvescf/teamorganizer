@@ -9,6 +9,8 @@ export const Container = styled.View`
   justify-content: center;
 `;
 
+export const TouchHomeButton = styled.TouchableOpacity``;
+
 export const Logo = styled.Image`
   width: ${RFValue(46)}px;
   height: ${RFValue(55)}px;
