@@ -1,6 +1,6 @@
 # Team Organizer
 
-App consiste em ajudar na organização de pessoas que se encontram regularmente para jogar em grupos. O aplicativo foi projetado com uma navegação em pilha que permiti aos usuários cadastrar ou remover grupos e membros, além de armazenar essas informações localmente no dispositivo, garantindo a persistência dos dados mesmo quando o aplicativo é fechado utilizando async-storage. Além disso, padronização de estilo do App com tema, utilizando a biblioteca Styled Components.
+App consiste em ajudar na organização de pessoas que se encontram para jogar em turmas. O aplicativo foi projetado com uma navegação em pilha que permiti aos usuários cadastrar ou remover turmas e membros, além de armazenar essas informações localmente no dispositivo, garantindo a persistência dos dados mesmo quando o aplicativo é fechado utilizando async-storage. Além disso, padronização de estilo do App com tema, utilizando a biblioteca Styled Components.
 
 ### Falando um pouco mais de cada dependencia e suas responsabilidades: 
 
