@@ -20,7 +20,7 @@ export const setGroupInternal = async (newGroup: IGroup) => {
 
     await AsyncStorage.setItem(GROUP_COLLECTION, storage);
 
-    console.log('👽 👉 cadastrou');
+    console.log('👽 👉 cadastrou grupo');
   } catch (error) {
     throw error;
   }
