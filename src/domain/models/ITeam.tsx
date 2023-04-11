@@ -1,4 +1,4 @@
-export interface IClassName {
+export interface ITeam {
   id: string;
   name: string;
 }
