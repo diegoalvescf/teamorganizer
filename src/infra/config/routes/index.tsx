@@ -1,7 +1,9 @@
+import { IGroup } from '@domain/models/IGroup';
+
 export type TReactNavigationStackParamList = {
   GroupsScreen: undefined;
   NewGroupScreen: undefined;
-  PlayersScreen: { group: string };
+  PlayersScreen: { group: IGroup };
 };
 
 export enum ERouteName {
